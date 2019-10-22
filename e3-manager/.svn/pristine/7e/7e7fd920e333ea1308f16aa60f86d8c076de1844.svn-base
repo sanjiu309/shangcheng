@@ -1,0 +1,24 @@
+package chen.e3.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import chen.e3.entity.TbItem;
+import chen.e3.mapper.TbItemMapper;
+import chen.e3.service.ItemService;
+/**
+ * 商品管理
+ * @author 陈
+ *
+ */
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	private TbItemMapper dao;
+	
+	public TbItem getItemById(Long id) {
+		return dao.selectByPrimaryKey(id);
+	}
+
+}

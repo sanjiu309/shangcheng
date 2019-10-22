@@ -1,0 +1,5 @@
+chen\e3\search\mapper\ItemMapper.class
+chen\e3\search\dao\SearchDao.class
+chen\e3\search\message\AddItemMessageListener.class
+chen\e3\search\service\impl\SearchItemServiceImpl.class
+chen\e3\search\message\MyMessageListener.class
